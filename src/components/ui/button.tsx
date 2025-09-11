@@ -15,6 +15,8 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        financial: "bg-gradient-primary text-white hover:shadow-medium transition-all duration-300 hover:scale-105",
+        "financial-outline": "border-2 border-finance-primary text-finance-primary hover:bg-finance-primary hover:text-white transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
