@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Eye, EyeOff, TrendingUp, Shield, BarChart3 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -161,9 +162,11 @@ const Index = () => {
               
               <div className="text-center text-sm text-muted-foreground">
                 Não tem uma conta?{" "}
-                <Button variant="link" className="p-0 h-auto text-finance-primary font-medium">
-                  Criar conta
-                </Button>
+                <Link to="/register">
+                  <Button variant="link" className="p-0 h-auto text-finance-primary font-medium">
+                    Criar conta
+                  </Button>
+                </Link>
               </div>
             </CardFooter>
           </Card>
