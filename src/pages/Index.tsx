@@ -160,6 +160,17 @@ const Index = () => {
                 Entrar
               </Button>
               
+              {/* Botão temporário para acessar área admin */}
+              <Link to="/admin/users" className="w-full">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="w-full h-12 text-base font-semibold border-finance-primary text-finance-primary hover:bg-finance-primary hover:text-white"
+                >
+                  Área do Administrador (Demo)
+                </Button>
+              </Link>
+              
               <div className="text-center text-sm text-muted-foreground">
                 Não tem uma conta?{" "}
                 <Link to="/register">
