@@ -163,6 +163,16 @@ const Index = () => {
               </Button>
               
               {/* Botão temporário para acessar área admin */}
+              <Link to="/two-factor-auth" className="w-full">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="w-full h-12 text-base font-semibold border-finance-primary text-finance-primary hover:bg-finance-primary hover:text-white"
+                >
+                  Login com 2FA (Demo)
+                </Button>
+              </Link>
+              
               <Link to="/admin/users" className="w-full">
                 <Button 
                   variant="outline" 

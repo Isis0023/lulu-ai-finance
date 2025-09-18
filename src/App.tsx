@@ -9,6 +9,7 @@ import UserManagement from "./pages/UserManagement";
 import EmailVerification from "./pages/EmailVerification";
 import ForgotPassword from "./pages/ForgotPassword";
 import AdminUserCreate from "./pages/AdminUserCreate";
+import TwoFactorAuth from "./pages/TwoFactorAuth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/register" element={<Register />} />
           <Route path="/verify-email" element={<EmailVerification />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/two-factor-auth" element={<TwoFactorAuth />} />
           <Route path="/admin/users" element={<UserManagement />} />
           <Route path="/admin/users/create" element={<AdminUserCreate />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
