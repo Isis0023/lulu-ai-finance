@@ -145,7 +145,9 @@ const Index = () => {
                   </Label>
                 </div>
                 <Button variant="link" className="p-0 h-auto text-finance-primary">
-                  Esqueceu a senha?
+                  <Link to="/forgot-password">
+                    Esqueceu a senha?
+                  </Link>
                 </Button>
               </div>
             </CardContent>

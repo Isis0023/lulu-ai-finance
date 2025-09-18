@@ -12,6 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Search, Plus, Pencil, Trash2, Shield, User } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 
 const userSchema = z.object({
   name: z.string().min(2, "Nome deve ter pelo menos 2 caracteres"),
@@ -127,10 +128,18 @@ export default function UserManagement() {
             <h1 className="text-3xl font-bold text-foreground">Gerenciamento de Usuários</h1>
             <p className="text-muted-foreground">Administre os usuários do sistema</p>
           </div>
-          <Button onClick={handleAddNew}>
-            <Plus className="w-4 h-4 mr-2" />
-            Novo Usuário
-          </Button>
+          <div className="flex gap-2">
+            <Link to="/admin/users/create">
+              <Button>
+                <Plus className="w-4 h-4 mr-2" />
+                Criar Usuário
+              </Button>
+            </Link>
+            <Button onClick={handleAddNew} variant="outline">
+              <Plus className="w-4 h-4 mr-2" />
+              Adicionar Rápido
+            </Button>
+          </div>
         </div>
 
         {/* Stats Cards */}
